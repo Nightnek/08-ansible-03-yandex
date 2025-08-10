@@ -48,6 +48,11 @@ variable "ssh_key_private" {
   
 }
 
+variable "ssh_key_pub" {
+  default = "~\\.ssh\\id_ed25519.pub"
+  
+}
+
 variable "vm_platform_id" {
   type        = string
   default     = "standard-v3"
@@ -61,6 +66,12 @@ variable "vm_preemptible" {
 }
 
 variable "vm_os_family" {
+  type        = string
+  default     = "ubuntu-2204-lts-oslogin"
+  description = "A name of the OS"
+}
+
+variable "vm_os_family2" {
   type        = string
   default     = "centos-7-oslogin"
   description = "A name of the OS"
@@ -94,4 +105,8 @@ variable "vm_core_fraction" {
   description = "core_fraction"
 }
 
-
+variable "server_names" {
+  type        = set(string)
+  default     = ["lighthouse", "vector"]
+  description = "List of server names"
+}
