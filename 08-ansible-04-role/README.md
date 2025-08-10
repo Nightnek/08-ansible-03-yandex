@@ -37,7 +37,9 @@
 10. Выложите playbook в репозиторий.
 11. В ответе дайте ссылки на оба репозитория с roles и одну ссылку на репозиторий с playbook.
    https://github.com/Nightnek/08-ansible-03-yandex/tree/master/08-ansible-04-role/playbook
+
    https://github.com/Nightnek/lighthouse
+   
    https://github.com/Nightnek/vector
 
 ---
